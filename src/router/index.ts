@@ -10,7 +10,15 @@ const routes: Array<RouteRecordRaw> = [
     component: ()=> import("@/views/login/login.vue")
   },
 
+  // 重定向
+  {
+    name: "repath",
+    path: "/:pathMatch(.*)*",
+    redirect: {name: "login"}
+  },
 
+
+  
   // 默认
   {
     path: "/",
