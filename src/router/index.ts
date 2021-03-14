@@ -6,7 +6,7 @@ const routes: Array<RouteRecordRaw> = [
   // 登录
   {
     name: "login",
-    path: "/login",
+    path: "/login/login.vue",
     component: ()=> import("@/views/login/login.vue")
   },
 
