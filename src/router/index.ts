@@ -2,6 +2,16 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
 
 const routes: Array<RouteRecordRaw> = [
+
+  // 登录
+  {
+    name: "login",
+    path: "/login",
+    component: ()=> import("@/views/login/login.vue")
+  },
+
+
+  // 默认
   {
     path: "/",
     name: "Home",
